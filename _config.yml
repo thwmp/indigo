@@ -3,7 +3,7 @@ name: John Amori
 bio: Just another SysAdmin
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: A personal landing page
 
 # if it's an external image, update below for true
 # better with square images
@@ -13,7 +13,7 @@ picture: assets/images/profile.jpg
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: false
-resume-external: true
+resume-external: false
 resume-url: https://google.com/?q=my+resume
 
 url: http://www.JohnAmori.com
@@ -54,7 +54,7 @@ email: JohnAmori@ymail.com
 authors:
     johnamori:
         name: John Amori
-        bio: A Man who travels the world eating noodles
+        bio: internet nerd
         external-image: false
         picture: assets/images/profile.jpg
         twitter: thwmp
