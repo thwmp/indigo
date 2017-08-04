@@ -16,24 +16,24 @@ description: ssh file permission mishaps
 ## Summary:
 
  Working with ssh can be annoying at times, copying keys around and debugging access issues with public-key authentication.
- I recently came across a face-palm moment when my .ssh directory had write permissions for group. 
+ I recently came across a face-palm moment when my .ssh directory had write permissions for the group. 
  
- Despite experience, I was still fumbled by why my configuraiton wasn't working. My sshd_config had all the correct settings that  I could think of. This lead to making extra keys, checking configs and restarting the service more than needed.
+Despite previous experience, I was still fumbled by why my configuraiton wasn't working. My /etc/ssh/sshd_config had all the correct settings. This simple mistake unforunately lead to making extra keys, double checking confiugration and restarting the service more than needed and checking logs.
  
  Thanks to some savor at [StackExchange](https://unix.stackexchange.com/questions/351847/ssh-public-key-not-working-for-specific-user) I realized the error.
  
- I don't plan to go into detail on how ssh keys work or how to configure your server to use them, there are enough resources available already. You'll get so much more out of reading the man pages and learing to really utlize the whole suite of tools that ssh has to offer.
+ I don't plan to go into detail on how ssh keys work or how to configure your server to use them, there are enough resources available already. You'll get so much more out of reading the man pages and learing to really utilize the whole suite of tools that ssh has to offer. I'm using this blog as more of a bookmarking tool. 
  
  
  
  ## My Notes:
  
  * ~/.ssh should have 700 permissions
- * authorized_keys should be owned by the user 600 permissions
+ * authorized_keys 600 permissions
  * auth logs found in /var/log/auth.log
  * configuration settings in /etc/sshd/sshd_config
  * restart the service after any changes are made
- 
+ * When working with a lot of hosts, setting up a ~/.ssh/config file is key (see atlassian link below)
  * It's easy to copy an ssh key to a remote host with:
  
  ssh-copy-id -i ~/.ssh/rsa_id.pub username@hostname
