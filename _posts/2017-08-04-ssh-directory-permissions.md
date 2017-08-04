@@ -27,13 +27,14 @@ description: ssh file permission mishaps
  
  
  ## My Notes:
- 1 ~/.ssh should have 700 permissions
- 2 authorized_keys should be owned by the user 600 permissions
- 3 auth logs found in /var/log/auth.log
- 4 configuration settings in /etc/sshd/sshd_config
- 5 restart the service after any changes are made
  
- 6 It's easy to copy an ssh key to a remote host with:
+ * ~/.ssh should have 700 permissions
+ * authorized_keys should be owned by the user 600 permissions
+ * auth logs found in /var/log/auth.log
+ * configuration settings in /etc/sshd/sshd_config
+ * restart the service after any changes are made
+ 
+ * It's easy to copy an ssh key to a remote host with:
  
  ssh-copy-id -i ~/.ssh/rsa_id.pub username@hostname
 
