@@ -24,7 +24,7 @@ Despite previous experience, I was still fumbled by why my configuraiton wasn't 
  
  I don't plan to go into detail on how ssh keys work or how to configure your server to use them, there are enough resources available already. You'll get so much more out of reading the man pages and learing to really utilize the whole suite of tools that ssh has to offer. I'm using this blog as more of a bookmarking tool. 
  
- 
+---
  
  ## My Notes:
  
@@ -38,6 +38,7 @@ Despite previous experience, I was still fumbled by why my configuraiton wasn't 
  
  ssh-copy-id -i ~/.ssh/rsa_id.pub username@hostname
 
+---
  ## Links:
  
  * <https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/>
