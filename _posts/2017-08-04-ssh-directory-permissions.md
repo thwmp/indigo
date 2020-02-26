@@ -20,7 +20,7 @@ description: ssh file permission mishaps
  
 Despite previous experience, I was still fumbled by why my configuraiton wasn't working. My /etc/ssh/sshd_config had all the correct settings. This simple mistake unforunately lead to making extra keys, double checking confiugration and restarting the service more than needed and checking logs.
  
- Thanks to some savor at [StackExchange](https://unix.stackexchange.com/questions/351847/ssh-public-key-not-working-for-specific-user) I realized the error.
+ Thanks to some savior at [StackExchange](https://unix.stackexchange.com/questions/351847/ssh-public-key-not-working-for-specific-user) I realized the error.
  
  I don't plan to go into detail on how ssh keys work or how to configure your server to use them, there are enough resources available already. You'll get so much more out of reading the man pages and learing to really utilize the whole suite of tools that ssh has to offer. I'm using this blog as more of a bookmarking tool. 
  
